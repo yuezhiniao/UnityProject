@@ -1,6 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
+
+namespace Client
+{
+    
+
 
 public class PlayerStatus : MonoBehaviour {
 
@@ -73,15 +79,19 @@ public class PlayerStatus : MonoBehaviour {
         this.PlayName = this.m_User.Name;
         this.Exp = this.m_User.Exp;
         this.ExpMax = m_StartExp * m_MultipleExp * this.Lv;
-        this.LvMax = this.m_User.Hreo.MaxLv;
+        this.LvMax = this.m_User.Hero.MaxLv;
         this.HpRegenTime = this.m_User.HpRegenTime;
-        this.MpRegenTime = this.m_User.MPRegenTime;
+        this.MpRegenTime = this.m_User.MpRegenTime;
 
-        InitAllStatus();
+        this.InitALLStatus();
+       
 
     }
+
+   
 	// Update is called once per frame
 	void Update () {
 		
 	}
+}
 }

@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+
+namespace Client
+{
+    
+
 
 public class AttributeNode : Attribute {
 
@@ -54,4 +58,5 @@ public class AttributeNode : Attribute {
     {
         m_NodeList.Remove(node);
     }
+}
 }

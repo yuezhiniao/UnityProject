@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+
+namespace Client
+{
+    
+
 
 public abstract class Attribute  {
     private Attribute m_Parent;
@@ -39,7 +43,7 @@ public abstract class Attribute  {
         return this.m_Parent;
     }
 
-    
+    }
 
 
 
